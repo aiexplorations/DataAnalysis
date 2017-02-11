@@ -1,4 +1,4 @@
-# "DataAnalysis" - distributed data generation and summarisation functions in Scala
+# "DataAnalysis" - distributed data generation and summarization functions in Scala
 
 * Simple data analysis library in Scala
 * Intent is to distribute computation across multiple cores on a machine

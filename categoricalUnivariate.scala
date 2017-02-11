@@ -1,11 +1,9 @@
-package DataAnalysis
-
 /**
   * Created by Rajesh Sampathkumar on 2/11/2017.
   */
+package DataAnalysis
 
-
-class catDataset (column: Array[String]) {
+class categoricalUnivariate(column: Array[String]) {
 
   val data = column
 

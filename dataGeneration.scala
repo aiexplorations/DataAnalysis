@@ -40,7 +40,7 @@ class dataGeneration(cont: Boolean = true, cumul: Boolean = false, dist: String,
   }
   //Lognormal distribution
   def genLogNorm(loc: Double, scale: Double, size: Int): Array[Double] = {
-    def lognormal (x: Double) : Double = (1/ x*scale*math.sqrt(2*math.Pi)) * math.exp( - math.pow(math.log(x),2) / 2 * scale*scale)
+    def lognormal (x: Double) : Double = (1 / x*scale*math.sqrt(2*math.Pi)) * math.exp(- math.pow(math.log(x),2) / 2 * scale*scale)
 
     val independentVar :Array[Double] = Array.fill[Double](size)(math.random)
     return independentVar.map(x => lognormal(x))

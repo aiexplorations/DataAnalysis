@@ -38,16 +38,16 @@ object statistics {
 
     //Testing the Pearson R on a dataset and its derivative
     val pearsonR = new continuousBivariate(da1, da1.map(x => 3*x + math.random))
-    println("Pearson R " + pearsonR.corrCoef().toString)
+    println("\nPearson R " + pearsonR.corrCoef().toString+"\n")
 
     //Finding outliers in a data set
     //val outlierData = new dataGeneration(true, false, "lognormal", 20, 100, 20, 3).dataGenResult.map(x => x*10)
-    val outlierData = Array(0.1, 0.1, 0.1, 0.15, 0.15, 0.15, 0.1, 0.15, 1000)
-    val oLiers = new continuousOutliers(outlierData, 2.5).getZScores
+    val outlierData = Array(0.1, 0.1, 0.1, 0.15, 0.15, 0.15, 0.1, 0.15, 0.15)
+    val oLiers = new continuousOutliers(outlierData, 2.5).getOutliers
     //println("Total number of outliers in demo data set: "+oLiers.map(x => if( x == true) 1 else 0).reduce((x,y) => x+y))
     oLiers.foreach(println)
 
-
+    val ts1 = new univariateTimeseries(outlierData, 1).acorrFunc
   }
 
 }

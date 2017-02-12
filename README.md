@@ -7,6 +7,6 @@
 * Simple bivariate data analysis functionality being built (correlation available)
 * Demonstration area in the "statistics" object
 
-Developed by Rajesh RS ( http://twitter.com/rexplorations / http://in.linked.com/rajeshrs ) as a project to learn Scala programming for data analysis.
+Developed by Rajesh RS ( http://twitter.com/rexplorations / https://www.linkedin.com/in/rajeshrs ) as a project to learn Scala programming for data analysis.
 
 Comments and suggestions welcome!
